@@ -1,23 +1,16 @@
 #include <unistd.h>
-#include <string.h>
-#include <errno.h>
 
 /**
- *main - the main function
+ * main - Entry point of the program
  *
+ * Return: 1
+ */
 int main(void)
 {
-const char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-ssize_t len = strlen(message);
-ssize_t ret;
+int len = 59;
+char *str = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-ret = write(2, message, len);
-if (ret != len)
-{
-int error = (ret == -1) ? errno : EIO;
-const char *errorMsg = strerror(error);
-write(2, errorMsg, strlen(errorMsg));
-return 1;
-    }
+write(2, str, len);
+
 return (1);
-} 
+}
