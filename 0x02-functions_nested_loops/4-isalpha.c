@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isalpha
+ * _isalpha - to check alphabet
  *@c: variable to be checked
  *Return: 1 or 0
  */
