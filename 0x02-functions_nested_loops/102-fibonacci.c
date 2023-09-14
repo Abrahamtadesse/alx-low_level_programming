@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - first 50 fabonachi number
+ *Return: 0
+ */
+
 int main(void)
 {
 	unsigned long int t1 = 1;
