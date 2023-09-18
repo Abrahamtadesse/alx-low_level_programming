@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - resets the value of an intiger variable
- * @*n: an intiger pointer
+ * @n: an intiger pointer
  * Retern: void
  */
 
